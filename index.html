@@ -3,19 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biblioteca de Barrio</title>
+    <title>Biblioteca de Barrio - Proyecto Python</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; background-color: #f4f4f9; }
-        .container { background: white; padding: 30px; border-radius: 8px; display: inline-block; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        h1 { color: #333; }
-        p { color: #666; }
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; background-color: #f4f4f9; color: #333; }
+        .card { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; }
+        ul { line-height: 1.8; }
+        .btn { display: inline-block; background: #2ea44f; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; margin-top: 15px; }
+        .btn:hover { background: #2c974b; }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="card">
         <h1>📚 Biblioteca de Barrio</h1>
-        <p>Aplicación de gestión de catálogo, socios y préstamos desarrollada en Python.</p>
-        <p><strong>Estado:</strong> Proyecto migrado con éxito a componentes independientes.</p>
+        <p>Práctica de programación modular en <strong>Python</strong> para la gestión de una biblioteca.</p>
+        
+        <h2>Modularidad y Arquitectura del Sistema</h2>
+        <ul>
+            <li><strong><code>catalogo.py</code>:</strong> Gestión y búsqueda de libros en el inventario.</li>
+            <li><strong><code>socios.py</code>:</strong> Control de altas y gestión de socios.</li>
+            <li><strong><code>prestamos.py</code>:</strong> Lógica de préstamos, límites y fechas de caducidad.</li>
+            <li><strong><code>main.py</code>:</strong> Interfaz de consola y menú principal.</li>
+        </ul>
+
+        <h2>Código Fuente y Repositorio</h2>
+        <p>Puedes explorar todos los archivos y el código completo directamente en GitHub:</p>
+        <a class="btn" href="https://github.com/paaucmps-rgb/biblioteca-barrio" target="_blank">Ver Repositorio en GitHub</a>
     </div>
 </body>
 </html>
